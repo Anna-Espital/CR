@@ -1,0 +1,146 @@
+:root{
+    --fondo: red;
+    --primario:#820136;
+    --fuente:#ddeed8;
+    --fuente-claro:#e9e7de;
+
+}
+
+body{
+    
+    margin: 0;
+    padding: 0; 
+    background: url('../imagenes/fondoG.jpg') no-repeat center center fixed;
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-attachment: fixed; /* Fija la imagen de fondo, si lo deseas */
+    background-position: center; /* Opcional, puedes ajustar la posición si es necesario */
+}
+
+    
+    
+
+
+
+
+main{  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+
+.contenedor{
+    width: 315px;
+    height: 160px;
+    
+    border-radius: 20px;
+    border: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    transform-origin: center;
+    background: url('../imagenes/fondo3.jpg') no-repeat center center fixed;
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-attachment: fixed; /* Fija la imagen de fondo, si lo deseas */
+    background-position: center; /* Opcional, puedes ajustar la posición si es necesario */
+
+
+    transition: transform 0.15s;
+    
+}
+
+.contenedor:active {
+    transform: rotate(400deg);
+}
+
+.contenedor a {
+    color: rgba(228, 168, 198, 0.807);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.contenedor:hover{
+    box-shadow: 5px 5px 50px var(--fuente-claro);
+}
+
+.contenedor a img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section img{
+    width: 375px;
+    border-radius: 5px;
+}
+
+h2{
+    color: #ddeed8 ;
+}
+
+form{
+    color: var(--fuente);
+    font-size: 20px;
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--funte);
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 17px;
+    margin: 5px;
+}
+
+#res-anualidades-vencidas{
+    width: 120px;
+    height: 50px;
+    border: 1px solid rgb(255, 0, 144);
+    border-radius: 8px;
+    font-size: 10px;
+    padding-left: 17px;
+    margin: 5px 0 0 5px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    color: black;
+    
+}
+
+
+input:focus{
+    outline: 5px solid var(--primario);
+    border-radius: 8px;   
+}
+
+.boton-regresar{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: var(--primario);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+.boton-regresar:hover{
+    box-shadow: 5px 5px 50px var(--fuente-claro);
+
+}
